@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "react-router-dom": "^7.4.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^3.4.17"
+  },
+  "name": "tomato_delivery",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">Tomato Delivery</h1>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

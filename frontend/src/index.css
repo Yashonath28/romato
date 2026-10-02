@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+/* 🌎 Universal Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; /* Fixed box-sizing issue */
+  font-family: 'Outfit', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* 🖥️ Body Styling */
+body {
+  background-color: var(--body-color);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 🔗 Links */
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+  color: tomato; /* Optional: Subtle color change on hover */
+}
+
+/* 📏 App Container */
+.app {
+  width: 80%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* 🎬 Smooth Fade-In Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

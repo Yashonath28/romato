@@ -1,0 +1,114 @@
+.add {
+    width: 70%;
+    margin-left: max(5vw, 25px);
+    margin-top: 50px;
+    color: var(--light-text);
+    font-size: 16px;
+    background: var(--body-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.add form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Upload Image Styling */
+.add-img-upload img {
+    width: 130px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.add-img-upload img:hover {
+    transform: scale(1.05);
+}
+
+/* Product Name & Description */
+.add-product-name,
+.add-product-description {
+    width: max(40%, 280px);
+}
+
+.add-product-name input,
+.add-product-description textarea {
+    padding: 12px;
+    width: 100%;
+    border: 2px solid var(--border-color);
+    border-radius: 6px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.add-product-name input:focus,
+.add-product-description textarea:focus {
+    border-color: tomato;
+    box-shadow: 0 0 6px rgba(255, 99, 71, 0.6);
+    outline: none;
+}
+
+/* Category & Price Section */
+.add-category-price {
+    display: flex;
+    gap: 30px;
+}
+
+.add-category-price select,
+.add-category-price input {
+    max-width: 150px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid var(--border-color);
+    transition: all 0.3s ease;
+}
+
+.add-category-price select:focus,
+.add-category-price input:focus {
+    border-color: tomato;
+    box-shadow: 0 0 6px rgba(255, 99, 71, 0.6);
+}
+
+/* Submit Button */
+.add-btn {
+    max-width: 140px;
+    border: none;
+    padding: 12px;
+    background: linear-gradient(45deg, black, #333);
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.add-btn:hover {
+    background: linear-gradient(45deg, tomato, darkred);
+    transform: scale(1.05);
+}
+
+/* Image Upload Filter */
+label img[src*="assets/upload_area"] {
+    filter: var(--upload);
+}
+
+/* ========== RESPONSIVENESS ========== */
+@media (max-width: 768px) {
+    .add {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 15px;
+    }
+    .add-category-price {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .add-category-price select,
+    .add-category-price input {
+        max-width: 100%;
+    }
+}
